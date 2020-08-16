@@ -1,0 +1,10 @@
+.navbar__link {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.navbar__link:hover,
+.navbar__link_active {
+  background: gold;
+  color: #333;
+}

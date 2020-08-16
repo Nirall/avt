@@ -1,0 +1,25 @@
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  background: #808080;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.navbar__top {
+  padding: 10px 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+
+

@@ -1,0 +1,27 @@
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background: #808080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: auto 0;
+  padding: 10px;
+}
+
+.footer p {
+  max-width: 300px;
+}
+
+
+
+
+

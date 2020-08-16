@@ -1,0 +1,7 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  background: center/cover no-repeat url('main-bg.jpg') ;
+  height: 400px;
+  padding: 30px;
+}
