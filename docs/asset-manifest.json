@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/avt/static/css/main.cbd2d933.chunk.css",
+    "main.js": "/avt/static/js/main.e1624eb7.chunk.js",
+    "main.js.map": "/avt/static/js/main.e1624eb7.chunk.js.map",
+    "runtime-main.js": "/avt/static/js/runtime-main.9e23d4c7.js",
+    "runtime-main.js.map": "/avt/static/js/runtime-main.9e23d4c7.js.map",
+    "static/js/2.1f44a51b.chunk.js": "/avt/static/js/2.1f44a51b.chunk.js",
+    "static/js/2.1f44a51b.chunk.js.map": "/avt/static/js/2.1f44a51b.chunk.js.map",
+    "index.html": "/avt/index.html",
+    "precache-manifest.3784d96f0168f0ee07430118780d437d.js": "/avt/precache-manifest.3784d96f0168f0ee07430118780d437d.js",
+    "service-worker.js": "/avt/service-worker.js",
+    "static/css/main.cbd2d933.chunk.css.map": "/avt/static/css/main.cbd2d933.chunk.css.map",
+    "static/js/2.1f44a51b.chunk.js.LICENSE.txt": "/avt/static/js/2.1f44a51b.chunk.js.LICENSE.txt",
+    "static/media/logo.jpg": "/avt/static/media/logo.112bbf51.jpg",
+    "static/media/Header.css": "/avt/static/media/main-bg.fb0a1414.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e23d4c7.js",
+    "static/js/2.1f44a51b.chunk.js",
+    "static/css/main.cbd2d933.chunk.css",
+    "static/js/main.e1624eb7.chunk.js"
+  ]
+}
