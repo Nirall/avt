@@ -22,12 +22,10 @@ class App extends React.Component {
     return (
       <div className = "app">
         <Header />
-        <div className = 'main'>
           <Switch>
             { routeList }
             <Redirect to = '/' />
           </Switch>
-        </div>
         <Footer />
       </div>
     );

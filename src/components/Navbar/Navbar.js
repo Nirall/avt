@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.jpg';
 import './Navbar.css';
-import './__item/navbar__item.css';
 import NavbarLink from './__link/NavbarLink';
 import URLs from '../../URLs';
 
@@ -11,19 +10,21 @@ function Navbar(props) {
   });
   return (
     <nav className = "navbar">
-      <div className = "navbar__top">
-        <img src = { logo } className = 'logo' alt = 'логотип' width = "150px"/>
-        <a href = 'mailto:avt-technology@mail.ru' className = "navbar__item">avt-technology@mail.ru</a>
-        <a href = 'tel:+79655485500' className = "navbar__item">+7 965 548-55-00</a>
-        <div className = "navbar__item navbar__item_uppercase">
-          Отправить заявку
-        </div>
-        <div className = "navbar__item navbar__item_uppercase">
-          Заказать звонок
+      <div className = "navbar__item">
+        <img src = { logo } className = 'logo' alt = 'логотип' width = "130px"/>
+      </div>
+      <div className = "navbar__item">
+        <div className = 'navbar__list'>
+          { navList }
         </div>
       </div>
-      <div className = "navbar__bottom">
-        { navList }
+      <div className = "navbar__item">
+        <a href = 'tel:+79655485500' className = "navbar__link">+7 965 548-55-00</a>
+        <a href = 'mailto:avt-technology@mail.ru' className = "navbar__link">avt&#8209;technology@mail.ru</a>
+      </div>
+      <div className = "navbar__item">
+        <button className = "navbar__button">Заказать звонок</button>
+        <button className = "navbar__button">Отправить заявку</button>
       </div>
     </nav>
   )

@@ -9,7 +9,7 @@ function NavbarLink(props) {
   }
   
   return (
-    <Link to = { props.path } className = { 'navbar__item navbar__link' + classAdd }>
+    <Link to = { props.path } className = { 'navbar__link navbar__link_uppercase' + classAdd }>
       { props.name }
     </Link>
   )
