@@ -6,7 +6,7 @@ import './index.css';
 
 function HomePage(props) {
   return (
-    <div className = "content">
+    <div>
       <div className = "home-img">
         <div className = "home-img__background">
           <div className = "home-img__content">

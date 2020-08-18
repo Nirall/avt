@@ -15,7 +15,7 @@ function FormOrder(props) {
         <input type = "file" placeholder = "Телефон" multiple/>
         <input type = "text" className = "form-order__input" placeholder = "Сообщение" />
         <button type = "submit">Отправить</button>
-        <p>Указывая свои данные, <a href = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</a></p>
+        <p className = "form-order__description">Указывая свои данные, <a href = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</a></p>
       </form>
     </div>
   )

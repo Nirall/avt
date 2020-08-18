@@ -1,3 +1,17 @@
 .samples-img {
   background: center/cover no-repeat url('../../images/samples-bg.jpg') ;
 }
+
+.samples__img {
+  border: 1px solid #AAA;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.samples__images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

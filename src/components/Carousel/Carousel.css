@@ -1,0 +1,14 @@
+.carousel {
+  max-width: 800px; 
+  margin: 30px auto;
+}
+
+.carousel__img {
+  height: 300px;
+  transition: background 0.5s;
+}
+
+.carousel__icons {
+  display: flex;
+  flex-wrap: wrap;
+}
