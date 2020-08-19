@@ -6,8 +6,8 @@ class Slider extends React.Component {
     super(props);
     this.state = {
       images: this.props.images,
-      activeImg: 0,
-      fullScreen: false,
+      activeImg: this.props.activeImg,
+      fullScreen: this.props.active,
     }
   }
 
@@ -25,6 +25,7 @@ class Slider extends React.Component {
     if (e) {
       e.stopPropagation();
     }
+
     const nextImg = this.state.images[this.state.activeImg + 1] ?  this.state.activeImg + 1 : 0;
     this.setState({ activeImg: nextImg});
   }
@@ -42,16 +43,11 @@ class Slider extends React.Component {
     if (this.state.fullScreen) return;
     this.nextImg()
   }
+
   fullScreenToggle = () => {
     this.setState((state) => ({
       fullScreen: !state.fullScreen,
     }))
-  }
-
-  fullScreenOff = () => {
-    this.setState({
-      fullScreen: false,
-    })
   }
 
   render() {
@@ -71,6 +67,11 @@ class Slider extends React.Component {
     )
   }
   
+}
+
+Slider.defaultProps = {
+  active: false,
+  activeImg: 0,
 }
 
 export default Slider;

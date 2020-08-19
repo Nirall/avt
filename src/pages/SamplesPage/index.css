@@ -8,6 +8,11 @@
   width: 300px;
   height: 200px;
   box-shadow: 15px 10px 10px #DDD;
+  cursor: pointer;
+}
+
+.samples__img:hover {
+  border-color: #EEE;
 }
 
 .samples__images {
@@ -20,6 +25,7 @@
 .samples__titles {
   display: flex;
   justify-content: center;
+  text-decoration: underline;
 }
 
 .samples__title {

@@ -1,5 +1,7 @@
 import React from 'react';
 import { brassArrImgs, alumArrImgs, coppArrImgs } from "./images";
+import Slider from '../../components/Slider/Slider';
+import SamplesImg from './__img/SamplesImg';
 import './index.css';
 
 class SamplesPage extends React.Component {
@@ -7,40 +9,48 @@ class SamplesPage extends React.Component {
     super(props);
     this.state = {
       activeList: 'brassListImgs',
+      activeSlider: false,
+      activeImg: 0,
     }
   }
+
+  imgClickHandler = (index, e) => {
+    this.setState({
+      activeSlider: true,
+      activeImg: index,
+    })
+  }
+
   render() {
-    const brassListImgs = brassArrImgs.map((img) => {
-      return (
-        <div className = "samples__img" style = {{ background: `center/cover no-repeat url(${img})`}} key = { img }></div>
-      )
+    const brassListImgs = brassArrImgs.map((img, index) => {
+      return <SamplesImg img = { img } key = { img } index = { index } clickHandler  = { this.imgClickHandler } />
     })
   
-    const alumListImgs = alumArrImgs.map((img) => {
-      return (
-        <div className = "samples__img" style = {{ background: `center/cover no-repeat url(${img})`}} key = { img } ></div>
-      )
+    const alumListImgs = alumArrImgs.map((img, index) => {
+      return <SamplesImg img = { img } key = { img } index = { index } clickHandler  = { this.imgClickHandler } />
     })
   
-    const coppListImgs = coppArrImgs.map((img) => {
-      return (
-        <div className = "samples__img" style = {{ background: `center/cover no-repeat url(${img})`}} key = { img }></div>
-      )
+    const coppListImgs = coppArrImgs.map((img, index) => {
+      return <SamplesImg img = { img } key = { img } index = { index } clickHandler  = { this.imgClickHandler } />
     })
 
-    let activeList = "";
+    let activeList;
+    let activeArr;
 
     switch (this.state.activeList) {
       case 'alumListImgs':
         activeList = alumListImgs;
+        activeArr = alumArrImgs;
         break;
 
       case 'coppListImgs':
         activeList = coppListImgs;
+        activeArr = coppArrImgs;
         break;
 
       default:
         activeList = brassListImgs;
+        activeArr = brassArrImgs;
     }
 
     return (
@@ -77,7 +87,8 @@ class SamplesPage extends React.Component {
             <aside className = "aside">
               <p className = "main-idea">
                 Наше автоматизированное современное оборудование гарантируют высокое качество
-                продукции и может обеспечить крупносерийное и массовое производство изделий заданной точности. 
+                продукции и может обеспечить крупносерийное и массовое производство изделий заданной точности.
+                <br /> 
                 До 500 000 деталей в месяц.
               </p>
             </aside>
@@ -92,6 +103,16 @@ class SamplesPage extends React.Component {
             { activeList }
           </div>
         </main>
+        <div onClick = { () => this.setState({ activeSlider: false }) }>
+        { this.state.activeSlider 
+          && <Slider
+            images = { activeArr }
+            active = { this.state.activeSlider }
+            onlyFullScreen = { true }
+            activeImg = { this.state.activeImg }
+          />
+        }
+        </div>
       </div>
     )
   }
