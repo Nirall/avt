@@ -12,6 +12,13 @@ function ContactsPage(props) {
         <p>Юр. адрес: 620062, Свердловская область, г. Екатеринбург,пр-т Ленина, д. 60а, офис 334</p>
         <p>Тел.: +7 965 548-55-00</p>
         <p>E-mail: avt-technology@mail.ru</p>
+        <div className = "ymap">
+          <iframe
+            title = "ymap"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ade0a5058feacdfadf6eb9d6de6950a37102564ae697d3f8eb007e149dbd6a5c0&amp;source=constructor"
+            width="1160" height="450" frameBorder="0">
+          </iframe>
+        </div>
       </main>
     </div>
   )
