@@ -56,11 +56,6 @@ aside {
   flex: 0 0 366px;
 }
 
-.wrapper-slider {
-  display: flex;
-  justify-content: center;
-}
-
 .main-idea {
   padding-top: 10px;
   text-align: justify;

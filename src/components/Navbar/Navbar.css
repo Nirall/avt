@@ -65,6 +65,7 @@
     top: 122px;
     left: 0;
     flex-direction: column;
+    align-items: flex-start;
     max-width: 320px;
     padding: 0;
     background: #808080;
@@ -74,12 +75,6 @@
 
   .navbar__list_visible {
     display: flex;
-  }
-
-  .navbar__list .navbar__link {
-    box-sizing: border-box;
-    width: 100%;
-    text-align: start;
   }
 
   .navbar__burger {

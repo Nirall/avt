@@ -1,6 +1,8 @@
 .slider {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   height: 240px;
+  content: " ";
   transition: all 0.5s;
   position: relative;
   border: 3px solid #AAA;
@@ -14,7 +16,7 @@
   left: 50%;
   margin-top: -270px;
   margin-left: -360px;
-  width: 720px;
+  max-width: 720px;
   height: 540px;
   transition: background 0.5s;
   border: 3px solid #AAA;
@@ -22,6 +24,9 @@
 
 .slider__modal {
   z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .slider__modal_active {

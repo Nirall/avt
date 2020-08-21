@@ -6,7 +6,11 @@ import URLs from '../../URLs';
 
 function Navbar(props) {
   const navList = URLs.map((url) => {
-    return <NavbarLink path = { url.path } name = { url.name } key = { url.name }/>
+    return (
+      <div key = { url.name } onClick = { () => document.querySelector(".navbar__list").classList.remove("navbar__list_visible") }>
+        <NavbarLink path = { url.path } name = { url.name } key = { url.name } />
+      </div>
+    )
   });
 
   const burgerHandler = () => {
