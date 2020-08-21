@@ -21,6 +21,18 @@ class SamplesPage extends React.Component {
     })
   }
 
+  sliderCloseHandler = () => {
+    this.setState({
+      activeSlider: false,
+    })
+  }
+
+  sliderResizeHandler = () => {
+    this.setState({
+      activeSlider: false,
+    })
+  }
+
   render() {
     const brassListImgs = brassArrImgs.map((img, index) => {
       return <SamplesImg img = { img } key = { img } index = { index } clickHandler  = { this.imgClickHandler } />
@@ -103,15 +115,17 @@ class SamplesPage extends React.Component {
             { activeList }
           </div>
         </main>
-        <div onClick = { () => this.setState({ activeSlider: false }) }>
-        { this.state.activeSlider 
-          && <Slider
-            images = { activeArr }
-            active = { this.state.activeSlider }
-            onlyFullScreen = { true }
-            activeImg = { this.state.activeImg }
-          />
-        }
+        <div>
+          { this.state.activeSlider 
+            && <Slider
+              images = { activeArr }
+              activeImg = { this.state.activeImg }
+              active = { this.state.activeSlider }
+              onlyFullScreen = { true }
+              closeObserver = { this.sliderCloseHandler }
+              resizeObserver = { this.sliderResizeHandler }
+            />
+          }
         </div>
       </div>
     )

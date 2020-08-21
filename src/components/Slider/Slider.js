@@ -8,6 +8,7 @@ class Slider extends React.Component {
       images: this.props.images,
       activeImg: this.props.activeImg,
       fullScreen: this.props.active,
+      isHideFullScreen: false,
     }
   }
 
@@ -15,10 +16,28 @@ class Slider extends React.Component {
     this.timerID = setInterval( 
       () => this.autoChangeImg(), 3000
     );
+    window.addEventListener("resize", this.resize);
+    this.resize();
   }
 
   componentWillUnmount() {
     clearInterval(this.timerID);
+  }
+
+  resize = () => {
+    let isCurrentWidthLess = (window.innerWidth < 750);
+
+    if (this.props.resizeObserver && isCurrentWidthLess) {
+      this.props.resizeObserver();
+    }
+
+    if (isCurrentWidthLess !== this.state.isHideFullScreen) {
+      this.setState({ isHideFullScreen: isCurrentWidthLess });
+    }
+
+    if (isCurrentWidthLess && this.state.fullScreen) {
+      this.setState({ fullScreen: false })
+    }
   }
 
   nextImg = (e = null) => {
@@ -40,28 +59,55 @@ class Slider extends React.Component {
   }
 
   autoChangeImg = () => {
-    if (this.state.fullScreen) return;
+    if (this.state.fullScreen) {
+      if (!this.state.isHideFullScreen) {
+        return;
+      }
+    }
+
     this.nextImg()
   }
 
-  fullScreenToggle = () => {
+  fullScreenOn = () => {
+    if (!this.state.isHideFullScreen) {
+      this.setState((state) => ({
+        fullScreen: true,
+      }))
+    }
+  }
+
+  fullScreenOff = (e) => {
+    e.stopPropagation();
+
     this.setState((state) => ({
-      fullScreen: !state.fullScreen,
+      fullScreen: false,
     }))
+
+    if (this.props.closeObserver) {
+      this.props.closeObserver();
+    }
   }
 
   render() {
+    let closeBtn;
+    if (this.state.fullScreen && !this.state.isHideFullScreen) {
+      closeBtn = <div className = "slider__btn slider__btn_close" onClick = { this.fullScreenOff }>&#10006;</div>
+    }
+
     return (
-      <div
-        className = { (this.state.fullScreen) ? "slider slider_active" : "slider" }
-        style = {{ background: `no-repeat center/cover url(${this.state.images[this.state.activeImg]})` }}
-        onClick = { this.fullScreenToggle }
-      >
-        <div className = "slider__btn slider__btn_left" onClick = { this.previousImg }>
-          &#10096;
-        </div>
-        <div className = "slider__btn slider__btn_right" onClick = { this.nextImg }>
-          &#10097;
+      <div className = { (this.state.fullScreen && !this.state.isHideFullScreen) ? "slider__modal slider__modal_active" : "slider__modal" }>
+        <div
+          className = { (this.state.fullScreen && !this.state.isHideFullScreen) ? "slider slider_active" : "slider" }
+          style = {{ background: `no-repeat center/cover url(${this.state.images[this.state.activeImg]})` }}
+          onClick = { this.fullScreenOn }
+        >
+          { closeBtn }
+          <div className = "slider__btn slider__btn_left" onClick = { this.previousImg }>
+            &#10096;
+          </div>
+          <div className = "slider__btn slider__btn_right" onClick = { this.nextImg }>
+            &#10097;
+          </div>
         </div>
       </div>
     )
