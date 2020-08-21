@@ -27,7 +27,7 @@ function HomePage(props) {
         <div className = "home__wrapper-steps-img">
           <img className = "home__steps-img" src = { stepsImg } alt = "Этапы процесса"/>
         </div>
-        <div className = "sections">
+        <div className = "home__sections">
           <section className = "home__section">
             <ul className = "home__ul">
               <li>01 - Разработка чертежа изделия</li>
@@ -42,7 +42,7 @@ function HomePage(props) {
               <li>10 - Упаковка и отгрузка</li>
             </ul>
           </section>
-          <section className = "home__section">
+          <section className = "home__section home__description">
           <p>
             Вся структура компании построена на ответственной работе каждого сотрудника на
             любом уровне и вместе с техническим опытом позволяет надежно отслеживать

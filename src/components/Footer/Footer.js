@@ -15,10 +15,10 @@ function Footer(props) {
         <a href = 'mailto:avt-technology@mail.ru' className = 'navbar__link'>avt-technology@mail.ru</a>
         <a href = 'tel:+79655485500' className = 'navbar__link'>+7 965 548-55-00</a>
       </div>
-      <div className = "footer__item">
+      <div className = "footer__item footer__nav">
         { navList }
       </div>
-      <div className = "footer__item">
+      <div className = "footer__item footer__about">
         <p>
           Мы производим широкий ассортимент продукции из латуни,
           алюминия, меди и медных сплавов для различных отраслей промышленности.

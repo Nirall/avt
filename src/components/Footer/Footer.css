@@ -31,6 +31,21 @@
   max-width: 300px;
 }
 
+@media (max-width: 950px) {
+  .footer {
+    justify-content: center;
+  }
+  .footer__nav {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer__about {
+    display: none;
+  }
+}
+
 
 
 

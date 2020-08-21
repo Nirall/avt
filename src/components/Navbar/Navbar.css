@@ -2,6 +2,7 @@
   padding: 20px 0;
   box-sizing: border-box;
   width: 100%;
+  min-height: 122px;
   background: #808080;
   color: white;
   display: flex;
@@ -38,7 +39,7 @@
 }
 
 .navbar__button {
-  width: 150px;
+  width: 160px;
   padding: 5px;
   margin: 3px;
   font-size: 17px;
@@ -83,6 +84,20 @@
 
   .navbar__burger {
     display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+  }
+  .navbar__buttons {
+    display: none;
   }
 }
 

@@ -15,6 +15,10 @@
   font-family: "Ubuntu Condensed", Arial, sans-serif;
 }
 
+.form-order p {
+  text-align: center;
+}
+
 .form-order__description {
   font-size: 16px;
 }
