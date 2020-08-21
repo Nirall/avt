@@ -42,7 +42,9 @@ function MechanicalProcessingPage(props) {
             </ul>
           </article>
           <aside className = "aside">
-            <Slider images = { [img1, img2, img3, img4] }></Slider>
+            <div className = "wrapper-slider">
+              <Slider images = { [img1, img2, img3, img4] }></Slider>
+            </div>
             <p className = "main-idea">
               Благодаря высокотехнологичному оборудованию мы можем обеспечить крупносерийное и массовое
               производство изделий заданной точности.

@@ -10,5 +10,12 @@
 
 .carousel__icons {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+  .carousel__title {
+    font-size: 28px;
+  }
 }

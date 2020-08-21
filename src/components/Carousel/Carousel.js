@@ -40,7 +40,7 @@ class Carousel extends React.Component {
 
     return (
       <div className = "carousel">
-        <h2>{ this.state.activeName }</h2>
+        <h2 className = "carousel__title">{ this.state.activeName }</h2>
         <div
           className = "carousel__img"
           style = {{ background: `center/contain no-repeat url(${this.state.activeImg})` }}

@@ -24,8 +24,10 @@
 
 .samples__titles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .samples__title {

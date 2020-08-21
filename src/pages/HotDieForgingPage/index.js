@@ -43,7 +43,9 @@ function HotDieForgingPage(props) {
             </ul>
           </article>
           <aside className = "aside">
-            <Slider images = { [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10] }></Slider>
+            <div className = "wrapper-slider">
+              <Slider images = { [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10] }></Slider>
+            </div>
             <p className = "main-idea">
               Глубокие знания в области цветной металлургии и технологии штамповки
               позволяют обеспечить высокое качество получаемых изделий.
