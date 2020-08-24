@@ -11,7 +11,20 @@ class SamplesPage extends React.Component {
       activeList: 'brassListImgs',
       activeSlider: false,
       activeImg: 0,
+      isCurrentWidthLess: false,
     }
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.resizeHandler);
+    this.resizeHandler();
+  }
+
+  titleClickHandler = (section, e) => {
+    this.setState({
+      activeList: section,
+      activeImg: 0,
+    })
   }
 
   imgClickHandler = (index, e) => {
@@ -27,10 +40,16 @@ class SamplesPage extends React.Component {
     })
   }
 
-  sliderResizeHandler = () => {
-    this.setState({
-      activeSlider: false,
-    })
+  resizeHandler = () => {
+    if (window.innerWidth < 650) {
+      this.setState({
+        isCurrentWidthLess: true,
+      });
+    } else {
+      this.setState({
+        isCurrentWidthLess: false,
+      });
+    }
   }
 
   render() {
@@ -64,6 +83,8 @@ class SamplesPage extends React.Component {
         activeList = brassListImgs;
         activeArr = brassArrImgs;
     }
+
+    let isShowSlider = (this.state.activeSlider || this.state.isCurrentWidthLess);
 
     return (
       <div>
@@ -107,23 +128,23 @@ class SamplesPage extends React.Component {
           </div>
           <h2>ОБРАЗЦЫ</h2>
           <div className = "samples__titles">
-            <div className = "samples__title" onClick = { () => this.setState({ activeList: 'brassListImgs' }) }>Образцы из латуни</div>
-            <div className = "samples__title" onClick = { () => this.setState({ activeList: 'alumListImgs' }) }>Образцы из алюминия</div>
-            <div className = "samples__title" onClick = { () => this.setState({ activeList: 'coppListImgs' }) }>Образцы из меди</div>
+            <div className = "samples__title" onClick = { this.titleClickHandler.bind(this, 'brassListImgs') }>Образцы из латуни</div>
+            <div className = "samples__title" onClick = { this.titleClickHandler.bind(this, 'alumListImgs') }>Образцы из алюминия</div>
+            <div className = "samples__title" onClick = { this.titleClickHandler.bind(this, 'coppListImgs') }>Образцы из меди</div>
           </div>
           <div className = "samples__images">
-            { activeList }
+            { !this.state.isCurrentWidthLess && activeList }
           </div>
         </main>
-        <div>
-          { this.state.activeSlider 
+        <div className = "samples__wrapper-slider">
+          { isShowSlider 
             && <Slider
               images = { activeArr }
               activeImg = { this.state.activeImg }
               active = { this.state.activeSlider }
-              onlyFullScreen = { true }
+              onlyFullScreen = { !this.state.isCurrentWidthLess }
               closeObserver = { this.sliderCloseHandler }
-              resizeObserver = { this.sliderResizeHandler }
+              key = { activeArr }
             />
           }
         </div>

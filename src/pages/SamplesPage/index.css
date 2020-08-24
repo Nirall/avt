@@ -38,3 +38,7 @@
 .samples__title:hover {
   opacity: 0.5;
 }
+
+.samples__wrapper-slider {
+  margin: 20px;
+}
