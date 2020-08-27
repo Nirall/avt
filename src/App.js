@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { Route, Switch, Redirect, } from 'react-router-dom';
 import URLs from './URLs';
@@ -21,7 +21,9 @@ class App extends React.Component {
 
     return (
       <div className = "app">
-        <Header />
+        <header>
+          <Navbar />
+        </header>
           <Switch>
             { routeList }
             <Redirect to = '/' />
