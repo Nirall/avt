@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FormOrder from '../../components/Form-order/FormOrder';
 import stepsImg from './steps.jpg';
+import RoadImages from "../../components/RoadImages/RoadImages";
+import imagesArr from "./images";
 import './index.css';
 
 function HomePage(props) {
@@ -17,8 +19,23 @@ function HomePage(props) {
               технологических процессов.</p>
               <Link to = '/samples' className = "home-img__button">Образцы изделий</Link>
             </div>
-            <div className = "home-img__content-middle"></div>
-            <div className = "home-img__content-right"></div>
+            <div className = "home-img__road-images">
+              <RoadImages images = { imagesArr[0] }/>
+            </div>
+            <div className = "home-img__road-images home-img__road-images_additional">
+              <RoadImages
+                images = { imagesArr[1] }
+                width = { 130 }
+                offset = { 100 }
+              />
+            </div>
+            <div className = "home-img__road-images home-img__road-images_horiz">
+              <RoadImages
+                images = { imagesArr[1] }
+                width = { 130 }
+                horizontal = { true }
+              />
+            </div>
           </div>
         </div>
       </div>
