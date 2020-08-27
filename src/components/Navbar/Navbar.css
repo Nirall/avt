@@ -54,7 +54,7 @@
 }
 
 @media (max-width: 1100px) {
-  .navbar__contacts {
+  .navbar__buttons {
     display: none;
   }
 }
@@ -91,7 +91,7 @@
     left: 50%;
     margin-left: -65px;
   }
-  .navbar__buttons {
+  .navbar__contacts {
     display: none;
   }
 }

@@ -17,7 +17,7 @@ function FormTakeOrder(props) {
         >
           &#10006;
         </span>
-        <p className = "form-take-order__title">Обратный звонок</p>
+        <p className = "form-take-order__title">Отправить заявку</p>
         <input type = "text" className = "form-take-order__input" placeholder = "Ф.И.О."/>
         <input type = "text" className = "form-take-order__input" placeholder = "Наименование компании"/>
         <input type = "email" className = "form-take-order__input" placeholder = "E-mail"/>
