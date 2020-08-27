@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/avt/static/css/main.2545a3cb.chunk.css",
-    "main.js": "/avt/static/js/main.1c16dd4c.chunk.js",
-    "main.js.map": "/avt/static/js/main.1c16dd4c.chunk.js.map",
+    "main.css": "/avt/static/css/main.b1492769.chunk.css",
+    "main.js": "/avt/static/js/main.cd87f837.chunk.js",
+    "main.js.map": "/avt/static/js/main.cd87f837.chunk.js.map",
     "runtime-main.js": "/avt/static/js/runtime-main.9e23d4c7.js",
     "runtime-main.js.map": "/avt/static/js/runtime-main.9e23d4c7.js.map",
-    "static/js/2.47650580.chunk.js": "/avt/static/js/2.47650580.chunk.js",
-    "static/js/2.47650580.chunk.js.map": "/avt/static/js/2.47650580.chunk.js.map",
+    "static/js/2.acd3993a.chunk.js": "/avt/static/js/2.acd3993a.chunk.js",
+    "static/js/2.acd3993a.chunk.js.map": "/avt/static/js/2.acd3993a.chunk.js.map",
     "index.html": "/avt/index.html",
-    "precache-manifest.8d90902a313d0943e47358bd7d1adbdf.js": "/avt/precache-manifest.8d90902a313d0943e47358bd7d1adbdf.js",
+    "precache-manifest.e3be879b3affdb16a5b498047a71ecea.js": "/avt/precache-manifest.e3be879b3affdb16a5b498047a71ecea.js",
     "service-worker.js": "/avt/service-worker.js",
-    "static/css/main.2545a3cb.chunk.css.map": "/avt/static/css/main.2545a3cb.chunk.css.map",
-    "static/js/2.47650580.chunk.js.LICENSE.txt": "/avt/static/js/2.47650580.chunk.js.LICENSE.txt",
+    "static/css/main.b1492769.chunk.css.map": "/avt/static/css/main.b1492769.chunk.css.map",
+    "static/js/2.acd3993a.chunk.js.LICENSE.txt": "/avt/static/js/2.acd3993a.chunk.js.LICENSE.txt",
     "static/media/1.png": "/avt/static/media/1.59ddd6c7.png",
     "static/media/1.jpg": "/avt/static/media/1.fc4bba8a.jpg",
     "static/media/10.jpg": "/avt/static/media/10.8e0e42b1.jpg",
@@ -52,13 +52,13 @@
     "static/media/8.png": "/avt/static/media/8.bc0c60b9.png",
     "static/media/9.jpg": "/avt/static/media/9.fb3e1bc5.jpg",
     "static/media/logo.jpg": "/avt/static/media/logo.112bbf51.jpg",
-    "static/media/index.css": "/avt/static/media/stamp-bg.d1f4e53b.jpg",
+    "static/media/index.css": "/avt/static/media/stamp-bg.22f66395.jpg",
     "static/media/steps.jpg": "/avt/static/media/steps.6ddc93c8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9e23d4c7.js",
-    "static/js/2.47650580.chunk.js",
-    "static/css/main.2545a3cb.chunk.css",
-    "static/js/main.1c16dd4c.chunk.js"
+    "static/js/2.acd3993a.chunk.js",
+    "static/css/main.b1492769.chunk.css",
+    "static/js/main.cd87f837.chunk.js"
   ]
 }

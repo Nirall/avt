@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7837afee428607f14ef7eb9acf64897a",
+    "revision": "1e357d8087ab3ef974b768d780b76641",
     "url": "/avt/index.html"
   },
   {
-    "revision": "3953fbab82aa708fcf19",
-    "url": "/avt/static/css/main.2545a3cb.chunk.css"
+    "revision": "ea2b27964adcc6e9eb8b",
+    "url": "/avt/static/css/main.b1492769.chunk.css"
   },
   {
-    "revision": "c29cb135c9cc0fb32e47",
-    "url": "/avt/static/js/2.47650580.chunk.js"
+    "revision": "33444c91a907517aa1ec",
+    "url": "/avt/static/js/2.acd3993a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/avt/static/js/2.47650580.chunk.js.LICENSE.txt"
+    "url": "/avt/static/js/2.acd3993a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3953fbab82aa708fcf19",
-    "url": "/avt/static/js/main.1c16dd4c.chunk.js"
+    "revision": "ea2b27964adcc6e9eb8b",
+    "url": "/avt/static/js/main.cd87f837.chunk.js"
   },
   {
     "revision": "ca194a3de2fa089617e1",
@@ -336,20 +336,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/avt/static/media/logo.112bbf51.jpg"
   },
   {
-    "revision": "95abcc76bc89b769b20f74cffd87dd9b",
-    "url": "/avt/static/media/main-bg.95abcc76.jpg"
+    "revision": "c925ea9a5cc291cc98276e4152622102",
+    "url": "/avt/static/media/main-bg.c925ea9a.jpg"
   },
   {
-    "revision": "2009cb03df5777ee4d44bc8b078fa1f3",
-    "url": "/avt/static/media/mech-bg.2009cb03.jpg"
+    "revision": "4438036bb47339c4ac9fb16075638722",
+    "url": "/avt/static/media/mech-bg.4438036b.jpg"
   },
   {
-    "revision": "bcff8d9b9bca53d3993cbc2189f59945",
-    "url": "/avt/static/media/samples-bg.bcff8d9b.jpg"
+    "revision": "36bed37109f1ef945e566ce075733f9a",
+    "url": "/avt/static/media/samples-bg.36bed371.jpg"
   },
   {
-    "revision": "d1f4e53bc2622f0bf81c79f305733860",
-    "url": "/avt/static/media/stamp-bg.d1f4e53b.jpg"
+    "revision": "22f663957425a5fb1163ffb9bb12e9e7",
+    "url": "/avt/static/media/stamp-bg.22f66395.jpg"
   },
   {
     "revision": "6ddc93c8ec1a0cb2ba395beb2fa868cd",
