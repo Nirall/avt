@@ -1,6 +1,6 @@
 {
-  "name": "avt_react",
   "homepage": "https://nirall.github.io/avt/",
+  "name": "avt_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -29,6 +29,9 @@ class Navbar extends React.Component {
 
   render() {
     const navList = URLs.map((url) => {
+      if (url.path === '/privacy') {
+        return null;
+      } 
       return (
         <div key = { url.name } onClick = { () => document.querySelector(".navbar__list").classList.remove("navbar__list_visible") }>
           <NavbarLink path = { url.path } name = { url.name } key = { url.name } />

@@ -3,6 +3,7 @@ import HotDieForgingPage from './pages/HotDieForgingPage/index';
 import MechanicalProcessingPage from './pages/MechanicalProcessingPage/index';
 import SamplesPage from './pages/SamplesPage/index';
 import ContactsPage from './pages/ContactsPage/index';
+import PrivacyPage from './pages/PrivacyPage/PrivacyPage';
 
 const URLs = [
   { path: '/', name: 'Главная', component: HomePage },
@@ -10,6 +11,7 @@ const URLs = [
   { path: '/mechanical-processing', name: 'Механическая обработка', component: MechanicalProcessingPage },
   { path: '/samples', name: 'Изделия', component: SamplesPage },
   { path: '/contacts', name: 'Контакты', component: ContactsPage },
+  { path: '/privacy', name: 'Соглашение', component: PrivacyPage },
 ]
 
 export default URLs;

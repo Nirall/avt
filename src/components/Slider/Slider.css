@@ -2,17 +2,17 @@
   width: 100%;
   max-width: 360px;
   height: 240px;
-  transition: all 0.5s;
   position: relative;
   border: 3px solid #AAA;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .slider_active {
   max-width: 720px;
   height: 540px;
-  transition: background 0.5s;
   border: 3px solid #AAA;
+  transition: all 0.5s ease;
 }
 
 .slider__modal {
