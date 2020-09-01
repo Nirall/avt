@@ -1,5 +1,6 @@
 import React from 'react';
 import './FormTakeCall.css';
+import { Link } from 'react-router-dom';
 
 function FormTakeCall(props) {
   const onCloseHandler = () => {
@@ -29,7 +30,7 @@ function FormTakeCall(props) {
           Отправить
         </button>
         <p className = "form-take-call__description">
-          Указывая свои данные, <a href = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</a>
+          Указывая свои данные, <Link to = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</Link>
         </p>
       </form>
     </div>

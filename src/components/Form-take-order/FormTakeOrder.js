@@ -1,5 +1,6 @@
 import React from 'react';
 import './FormTakeOrder.css';
+import { Link } from 'react-router-dom';
 
 function FormTakeOrder(props) {
   const onCloseHandler = () => {
@@ -33,7 +34,7 @@ function FormTakeOrder(props) {
           Отправить
         </button>
         <p className = "form-take-order__description">
-          Указывая свои данные, <a href = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</a>
+          Указывая свои данные, <Link to = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</Link>
         </p>
       </form>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './FormOrder.css';
+import { Link } from 'react-router-dom';
 
 function FormOrder(props) {
   return (
@@ -15,7 +16,7 @@ function FormOrder(props) {
         <input type = "file" multiple/>
         <input type = "text" className = "form-order__input" placeholder = "Сообщение" />
         <button type = "submit">Отправить</button>
-        <p className = "form-order__description">Указывая свои данные, <a href = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</a></p>
+        <p className = "form-order__description">Указывая свои данные, <Link to = "/privacy">Вы соглашаетесь с нашей Политикой конфиденциальности</Link></p>
       </form>
     </div>
   )
