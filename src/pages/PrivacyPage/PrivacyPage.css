@@ -18,3 +18,9 @@
 .privacy__ul-li:before {
   content: "— ";
 }
+
+@media (max-width: 550px) {
+  .privacy__h1 {
+    font-size: 24px;
+  }
+}

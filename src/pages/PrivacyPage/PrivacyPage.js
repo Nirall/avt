@@ -4,7 +4,7 @@ import './PrivacyPage.css';
 function PrivacyPage(props) {
   return (
     <div className = "privacy-page">
-      <h1>Политика конфиденциальности</h1>
+      <h1 className = "privacy__h1">Политика конфиденциальности</h1>
       <p>Дата последнего изменения: 27/08/2020</p>
         <h3 className = "privacy__li-title">1. Основные понятия</h3>
         <p><b>Сайт</b> – личный сайт, расположенный в сети Интернет по адресу: https://www.avttechnology.ru</p>

@@ -5,9 +5,6 @@ import URLs from '../../URLs';
 
 function Footer(props) {
   const navList = URLs.map((url) => {
-    if (url.path === '/privacy') {
-      return null;
-    } 
     return <NavbarLink path = { url.path } name = { url.name } key = { url.name }/>
   });
 
